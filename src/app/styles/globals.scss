@@ -1,0 +1,66 @@
+@import "variables.module";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body, html {
+  margin: 0;
+  position: relative;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0 auto;
+  font-size: max(100vw, 450px);
+  background-color: $COLOR_WHITE_LIGHT;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, ul, ol, li, div, span, button, menu {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 .065em;
+}
+
+/*
+.buttonCommonStyle {
+  border: 1px transparent solid;
+  background-color: $AQUAMARINE_COLOR;
+  color: $WHITE_COLOR;
+  text-align: center;
+  
+  transition: all ease-in-out .3s;
+  
+  &:hover, &:focus {
+    background: transparent;
+    border: 1px $AQUAMARINE_COLOR solid;
+  }
+  
+}*/
