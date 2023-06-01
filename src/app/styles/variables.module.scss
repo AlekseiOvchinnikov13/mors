@@ -29,4 +29,18 @@ $FONT_WEIGHT_MEDIUM: 500;
 $FONT_WEIGHT_SEMIBOLD: 600;
 $FONT_WEIGHT_BOLD: 700;
 
-
+:export {
+  colorWhiteLight : $COLOR_WHITE_LIGHT;
+  colorWhite90Light : $COLOR_WHITE_90_LIGHT;
+  colorBlueLight : $COLOR_BLUE_LIGHT;
+  colorBrawnLight : $COLOR_BRAWN_LIGHT;
+  colorBrawn80Light : $COLOR_BRAWN_80_LIGHT;
+  colorBrawn50Light : $COLOR_BRAWN_50_LIGHT;
+  
+  colorDarkblueDark : $COLOR_DARKBLUE_DARK;
+  colorBlueDark : $COLOR_BLUE_DARK;
+  colorWhiteDark : $COLOR_WHITE_DARK;
+  colorWhite90Dark : $COLOR_WHITE_90_DARK;
+  colorWhite70Dark : $COLOR_WHITE_70_DARK;
+  colorWhite60Dark : $COLOR_WHITE_60_DARK;
+}
