@@ -1,6 +1,7 @@
 $COLOR_WHITE_LIGHT: #FFFFFF;
 $COLOR_WHITE_90_LIGHT: rgba(#FFFFFF, .9);
 $COLOR_BLUE_LIGHT: #4944A4;
+$COLOR_BLUE_80_LIGHT: rgba(#4944A4, .8);
 $COLOR_BRAWN_LIGHT: #312429;
 $COLOR_BRAWN_80_LIGHT: rgba(#312429, .8);
 $COLOR_BRAWN_50_LIGHT: rgba(#312429, .5);
@@ -30,17 +31,18 @@ $FONT_WEIGHT_SEMIBOLD: 600;
 $FONT_WEIGHT_BOLD: 700;
 
 :export {
-  colorWhiteLight : $COLOR_WHITE_LIGHT;
-  colorWhite90Light : $COLOR_WHITE_90_LIGHT;
-  colorBlueLight : $COLOR_BLUE_LIGHT;
-  colorBrawnLight : $COLOR_BRAWN_LIGHT;
-  colorBrawn80Light : $COLOR_BRAWN_80_LIGHT;
-  colorBrawn50Light : $COLOR_BRAWN_50_LIGHT;
+  colorWhiteLight: $COLOR_WHITE_LIGHT;
+  colorWhite90Light: $COLOR_WHITE_90_LIGHT;
+  colorBlueLight: $COLOR_BLUE_LIGHT;
+  colorBlue80Light: $COLOR_BLUE_80_LIGHT;
+  colorBrawnLight: $COLOR_BRAWN_LIGHT;
+  colorBrawn80Light: $COLOR_BRAWN_80_LIGHT;
+  colorBrawn50Light: $COLOR_BRAWN_50_LIGHT;
   
-  colorDarkblueDark : $COLOR_DARKBLUE_DARK;
-  colorBlueDark : $COLOR_BLUE_DARK;
-  colorWhiteDark : $COLOR_WHITE_DARK;
-  colorWhite90Dark : $COLOR_WHITE_90_DARK;
-  colorWhite70Dark : $COLOR_WHITE_70_DARK;
-  colorWhite60Dark : $COLOR_WHITE_60_DARK;
+  colorDarkblueDark: $COLOR_DARKBLUE_DARK;
+  colorBlueDark: $COLOR_BLUE_DARK;
+  colorWhiteDark: $COLOR_WHITE_DARK;
+  colorWhite90Dark: $COLOR_WHITE_90_DARK;
+  colorWhite70Dark: $COLOR_WHITE_70_DARK;
+  colorWhite60Dark: $COLOR_WHITE_60_DARK;
 }

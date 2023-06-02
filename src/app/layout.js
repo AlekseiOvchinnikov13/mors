@@ -4,7 +4,8 @@ import {store} from '@/store/store';
 import './styles/globals.scss';
 import {Montserrat} from 'next/font/google';
 import Header from '@/components/Header';
-import classNames from 'classnames';
+import ContentWrapper from '@/components/contentWrapper';
+
 
 export const montserrat = Montserrat({
   weight: ['400', '500', '600', '700'],
@@ -22,11 +23,12 @@ export const metadata = {
 export default function RootLayout({children}) {
   return (
     <html lang="en">
-      <body className={classNames(montserrat.className, 'container')}>
+      <body className={montserrat.className}>
         <Provider store={store}>
-          <Header/>
-          <main>{children}</main>
-
+          <ContentWrapper>
+            <Header/>
+            <main>{children}</main>
+          </ContentWrapper>
         </Provider>
       </body>
     </html>

@@ -5,10 +5,11 @@ import LogoLight from '../../../public/assets/images/logo/logo-light.svg';
 import LogoDark from '../../../public/assets/images/logo/logo-dark.svg';
 import styles from './Logo.module.scss';
 import {useSelector} from 'react-redux';
+import {LightThemeName} from '@/data/theme';
 
 const Logo = () => {
   const {theme} = useSelector(state => state.themeStore);
-  const srcLogo = theme === 'light' ? LogoLight : LogoDark;
+  const srcLogo = theme === LightThemeName ? LogoLight : LogoDark;
 
   return (
     <Link href="/" className={styles.linkLogo}>

@@ -8,7 +8,7 @@ import {changeLang} from '@/store/langSlice';
 const LangSelector = () => {
   const {lang} = useSelector(state => state.langStore);
   const dispatch = useDispatch();
-  const selectHandle = value =>
+  const selectHandler = value =>
     dispatch(changeLang(value));
 
   return (
@@ -18,7 +18,7 @@ const LangSelector = () => {
       bordered={false}
       showArrow={false}
       value={lang}
-      onSelect={value => selectHandle(value)}
+      onSelect={value => selectHandler(value)}
     />
   );
 };

@@ -1,0 +1,23 @@
+@import '../../app/styles/variables.module';
+
+.menuDesktop {
+  color: black;
+  font-size: 15px;
+  
+  ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+    .link {
+      font-weight: $FONT_WEIGHT_REGULAR;
+      font-size: max(.01666em, 14px);
+      line-height: 1.2;
+      padding: 10px 5px;
+      transition: all .3s ease;
+    }
+    
+    .link_active {
+      border-bottom: 1px solid;
+    }
+  }
+}
