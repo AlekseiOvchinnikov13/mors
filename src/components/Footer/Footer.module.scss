@@ -1,0 +1,37 @@
+@import "../../app/styles/variables.module";
+
+.footer {
+  display: grid;
+  justify-items: center;
+  background-color: $COLOR_BLUE_DARK;
+}
+
+.footer_title {
+  font-weight: $FONT_WEIGHT_BOLD;
+  font-size: $DESKTOP_FZ_TITLE_SECONDARY;
+  color: $COLOR_WHITE_90_LIGHT;
+  line-height: 1.5;
+  padding-top: 70px;
+}
+
+.footer_subtitle {
+  font-weight: $FONT_WEIGHT_MEDIUM ;
+  font-size: $DESKTOP_FZ_SUBTITLE_PRIMARY;
+  color: $COLOR_WHITE_90_LIGHT;
+  line-height: 0.5;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.footer_social {
+  display: flex;
+}
+
+.copyright {
+  font-weight: $FONT_WEIGHT_REGULAR ;
+  font-size: $DESKTOP_FZ_TEXT_SECONDARY;
+  color: $COLOR_WHITE_90_LIGHT;
+  line-height: 0.2;
+  padding-top: 118px;
+  padding-bottom: 60px;
+}

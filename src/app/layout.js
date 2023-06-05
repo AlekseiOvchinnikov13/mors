@@ -4,6 +4,7 @@ import {store} from '@/store/store';
 import './styles/globals.scss';
 import {Montserrat} from 'next/font/google';
 import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 import ContentWrapper from '@/components/contentWrapper';
 
 
@@ -28,6 +29,7 @@ export default function RootLayout({children}) {
           <ContentWrapper>
             <Header/>
             <main>{children}</main>
+            <Footer/>
           </ContentWrapper>
         </Provider>
       </body>
