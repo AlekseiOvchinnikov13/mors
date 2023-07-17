@@ -30,6 +30,9 @@ $FONT_WEIGHT_MEDIUM: 500;
 $FONT_WEIGHT_SEMIBOLD: 600;
 $FONT_WEIGHT_BOLD: 700;
 
+$TRANSITION_COLOR: color .3s ease;
+$TRANSITION_ALL: all .3s ease;
+
 :export {
   colorWhiteLight: $COLOR_WHITE_LIGHT;
   colorWhite90Light: $COLOR_WHITE_90_LIGHT;

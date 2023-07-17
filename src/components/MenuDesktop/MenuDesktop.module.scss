@@ -7,13 +7,15 @@
   ul {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: right;
     
     .link {
       font-weight: $FONT_WEIGHT_REGULAR;
       font-size: max(.01666em, 14px);
       line-height: 1.2;
       padding: 10px 5px;
-      transition: all .3s ease;
+      transition: $TRANSITION_ALL;
     }
     
     .link_active {

@@ -1,0 +1,49 @@
+@import '../../app/styles/variables.module';
+
+.commonWrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0 110px;
+  
+  padding-top: max(.09027em, 30px);
+  
+  .textWrapper {
+    .title {
+      font-size: max($DESKTOP_FZ_TITLE_PRIMARY, 38px);
+      color: $COLOR_BLUE_LIGHT;
+      font-weight: $FONT_WEIGHT_BOLD;
+      line-height: normal;
+    }
+    
+    .profession {
+      font-size: max($DESKTOP_FZ_SUBTITLE_PRIMARY, 20px);
+      font-weight: $FONT_WEIGHT_MEDIUM;
+      transition: $TRANSITION_COLOR;
+      line-height: 179%;
+      padding-top: 1.4285em;
+    }
+    
+    .description {
+      font-size: max($DESKTOP_FZ_SUBTITLE_PRIMARY, 16px);
+      font-weight: $FONT_WEIGHT_REGULAR;
+      transition: $TRANSITION_COLOR;
+      line-height: 143%;
+      padding-top: 1.4285em;
+    }
+    
+    .socialLinks {
+      padding-top: max(40px, .0527em);
+    }
+  }
+  
+  .photo {
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .commonWrapper .textWrapper .profession,
+  .commonWrapper .textWrapper .description {
+    padding-top: 5px;
+  }
+}

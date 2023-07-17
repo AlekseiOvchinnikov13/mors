@@ -1,0 +1,17 @@
+@import '../../app/styles/variables.module';
+
+.socialNetworks {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  align-items: center;
+  justify-items: left;
+  gap: 60px;
+  
+  a {
+    display: flex;
+    
+    path {
+      transition: $TRANSITION_ALL;
+    }
+  }
+}
