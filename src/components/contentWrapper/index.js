@@ -8,12 +8,12 @@ const ContentWrapper = ({children}) => {
   const {theme} = useSelector(state => state.themeStore);
 
   return (
-    <section
+    <div
       className={classNames('container', styles.content)}
       style={{backgroundColor: theme === LightThemeName ? colorWhiteLight : colorDarkblueDark}}
     >
       {children}
-    </section>
+    </div>
   );
 };
 

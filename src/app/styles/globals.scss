@@ -42,9 +42,8 @@ a, button {
   cursor: pointer;
 }
 
-//TODO добавить значение padding bottom для мобилки
 .container {
-  padding: max(.03125em, 19px) max(.0972em, 18px) max(.04444em);
+  padding: max(.03125em, 19px) max(.0972em, 18px) max(.1388em, 100px);
 }
 
 .option {
