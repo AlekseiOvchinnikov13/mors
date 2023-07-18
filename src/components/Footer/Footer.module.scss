@@ -1,0 +1,41 @@
+@import '../../app/styles/variables.module';
+
+.footer {
+  background-color: $COLOR_BLUE_LIGHT;
+  text-align: center;
+  padding: max(.05208em, 60px) 0 max(.0444em, 41px);
+
+  .name {
+    font-size: max($DESKTOP_FZ_TITLE_SECONDARY, 38px);
+    color: $COLOR_WHITE_90_LIGHT;
+    line-height: normal;
+  }
+
+  .profession {
+    font-size: max($DESKTOP_FZ_SUBTITLE_PRIMARY, 22px);
+    color: $COLOR_WHITE_90_LIGHT;
+    line-height: 179%;
+    margin-top: .00694em;
+  }
+
+  .socialNetworks {
+    justify-content: center;
+    margin-top: .03125em;
+  }
+
+  .copyright {
+    font-size: max($DESKTOP_FZ_TEXT_SECONDARY, 16px);
+    color: $COLOR_WHITE_90_LIGHT;
+    line-height: normal;
+    margin-top: max(.08263em, 61px);
+  }
+}
+
+@media (max-width: 575px) {
+  .footer .profession {
+    margin-top: 20px;
+  }
+  .footer .socialNetworks {
+    margin-top: 60px;
+  }
+}

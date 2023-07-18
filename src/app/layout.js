@@ -5,6 +5,7 @@ import './styles/globals.scss';
 import {Montserrat} from 'next/font/google';
 import Header from '@/components/Header';
 import ContentWrapper from '@/components/contentWrapper';
+import Footer from '@/components/Footer';
 
 
 export const montserrat = Montserrat({
@@ -29,6 +30,7 @@ export default function RootLayout({children}) {
             <Header/>
             <main>{children}</main>
           </ContentWrapper>
+          <Footer/>
         </Provider>
       </body>
     </html>
