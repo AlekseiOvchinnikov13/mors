@@ -1,0 +1,22 @@
+@import '../../app/styles/variables.module';
+
+.button {
+  cursor: pointer;
+  min-width: 240px;
+  padding: 25px 50px;
+  background-color: $COLOR_BLUE_LIGHT;
+  border-radius: 10px;
+  border: 1px solid $COLOR_BLUE_LIGHT;
+  color: $COLOR_WHITE_90_LIGHT;
+  font-size:max($DESKTOP_FZ_BUTTON_PRIMARY, 18px) ;
+  line-height: normal;
+  font-weight: $FONT_WEIGHT_SEMIBOLD;
+  margin-top: max(0.07017em, 40px);
+}
+
+@media (max-width: 575px) {
+  .button {
+    width: 100%;
+  }
+}
+
