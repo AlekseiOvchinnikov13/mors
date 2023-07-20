@@ -1,0 +1,29 @@
+@import '../../app/styles/variables.module';
+
+.experience {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 max(40px, .08333em);
+  padding-top: max(.05555em, 30px);
+
+  .experienceItem {
+
+    .quantity {
+      color: $COLOR_BLUE_LIGHT;
+      font-size: max($DESKTOP_FZ_TITLE_SECONDARY, 30px);
+      font-weight: $FONT_WEIGHT_BOLD;
+      line-height: normal;
+    }
+
+    .field {
+      font-size: max($DESKTOP_FZ_TEXT_SECONDARY, 14px);
+      font-weight: $FONT_WEIGHT_REGULAR;
+      transition: $TRANSITION_COLOR;
+      line-height: 125%;
+
+      span {
+        display: grid;
+      }
+    }
+  }
+}
