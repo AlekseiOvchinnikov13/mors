@@ -1,0 +1,28 @@
+@import "../../app/styles/variables.module";
+
+.scopeSkill {
+  width: 100%;
+  
+  .title {
+    font-size: max(22px, $DESKTOP_FZ_SUBTITLE_SECONDARY);
+    font-weight: $FONT_WEIGHT_MEDIUM;
+    transition: $TRANSITION_COLOR;
+    text-align: left;
+  }
+  
+  .tagsWrapper {
+    padding-top: max(20px, .02083em);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: max(20px, .02083em);
+  }
+}
+
+@media (max-width: 575px) {
+  .scopeSkill .tagsWrapper {
+    justify-content: space-between;
+  }
+}

@@ -16,6 +16,7 @@ const Footer = () => {
       <p className={styles.copyright}>
         &copy; {startYear}{currentYear > startYear ? ` - ${currentYear}` : ''} Все права защищены
       </p>
+      <p className={styles.star}>«Instagram принадлежит компании Meta Platforms Inc., которая запрещена на территории РФ»</p>
     </footer>
   );
 };

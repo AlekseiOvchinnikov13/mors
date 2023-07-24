@@ -1,0 +1,24 @@
+@import '../../app/styles/variables.module';
+
+.tag {
+  transition: $TRANSITION_ALL;
+  font-size: max(16px, $DESKTOP_FZ_TEXT_ALTERNATIVE);
+  font-weight: $FONT_WEIGHT_MEDIUM;
+  border-radius: max(3px, .16666em);
+  padding: max(8px, .4444em) 0;
+  height: max(40px, 2.2222em);
+}
+
+.tagL {
+  width: max(7.7777em, 140px);
+}
+
+.tagM {
+  width: max(5em, 90px);
+}
+
+@media (max-width: 575px) {
+  .tagL, .tagM {
+    width: 40vw;
+  }
+}

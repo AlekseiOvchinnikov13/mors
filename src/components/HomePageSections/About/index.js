@@ -1,17 +1,18 @@
 'use client';
 import styles from './About.module.scss';
 import {useSelector} from 'react-redux';
-import {colorBrawn80Light, colorWhite70Dark} from '../../app/styles/variables.module.scss';
+import {colorBrawn80Light, colorWhite70Dark} from '../../../app/styles/variables.module.scss';
 import Button from '@/components/Button';
-import Experience from 'src/components/Experience';
+import Experience from '@/components/Experience';
+import Title from '@/components/Title';
 
 const About = () => {
   const {theme} = useSelector(state => state.themeStore);
-  return(
+  return (
     <div
-      className={styles.about}
+      className={`${styles.about} section`}
     >
-      <h2 className={styles.title}>Обо мне</h2>
+      <Title title={'Обо мне'}/>
       <p
         className={styles.text}
         style={{color: theme === 'light' ? colorBrawn80Light : colorWhite70Dark}}
@@ -22,10 +23,8 @@ const About = () => {
         Работу выполняю оперативно и качественно.
         Еще одна строчка для более полного текста.
       </p>
-
       <Experience/>
-
-      <Button text="Скачать CV" />
+      <Button text="Скачать CV"/>
     </div>
   );
 };

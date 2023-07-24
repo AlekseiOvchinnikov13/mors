@@ -1,0 +1,8 @@
+@import "../../app/styles/variables.module";
+
+.title {
+  font-size: max($DESKTOP_FZ_TITLE_SECONDARY, 38px);
+  color: $COLOR_BLUE_LIGHT;
+  font-weight: $FONT_WEIGHT_BOLD;
+  line-height: normal;
+}

@@ -43,13 +43,25 @@ a, button {
 }
 
 .container {
-  padding: max(.03125em, 19px) max(.0972em, 18px) max(.1388em, 100px);
+  padding: max(.03125em, 19px) .0972em max(.1388em, 100px);
 }
 
 .option {
   width: max(30px, .02083em);
   height: max(30px, .02083em);
   margin: 5px auto;
+}
+
+.section {
+  padding-top: max(.125em, 100px);
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
 }
 
 /*

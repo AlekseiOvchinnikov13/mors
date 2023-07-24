@@ -29,6 +29,13 @@
     line-height: normal;
     margin-top: max(.08263em, 61px);
   }
+  
+  .star {
+    font-size: 8px;
+    line-height: normal;
+    color: $COLOR_WHITE_90_LIGHT;
+    margin-top: 10px;
+  }
 }
 
 @media (max-width: 575px) {

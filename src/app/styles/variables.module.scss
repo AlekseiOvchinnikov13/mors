@@ -1,17 +1,21 @@
 $COLOR_WHITE_LIGHT: #FFFFFF;
 $COLOR_WHITE_90_LIGHT: rgba(#FFFFFF, .9);
 $COLOR_BLUE_LIGHT: #4944A4;
+$COLOR_BLUE_10_LIGHT: rgba(#4944A4, .1);
 $COLOR_BLUE_80_LIGHT: rgba(#4944A4, .8);
 $COLOR_BRAWN_LIGHT: #312429;
 $COLOR_BRAWN_80_LIGHT: rgba(#312429, .8);
 $COLOR_BRAWN_50_LIGHT: rgba(#312429, .5);
+$COLOR_BLACK_25_LIGHT: rgba(0, 0, 0, .25);
 
 $COLOR_DARKBLUE_DARK: #161B3B;
 $COLOR_BLUE_DARK: #4944A4;
+$COLOR_BLUE_20_DARK: rgba(#4944A4, .2);
 $COLOR_WHITE_DARK: #FFFFFF;
 $COLOR_WHITE_90_DARK: rgba(#FFFFFF, .9);
 $COLOR_WHITE_70_DARK: rgba(#FFFFFF, .7);
 $COLOR_WHITE_60_DARK: rgba(#FFFFFF, .6);
+$COLOR_BLACK_DARK: black;
 
 $FONT_FAMILY_MONTSERRAT: 'Montserrat', sans-serif;
 
@@ -37,15 +41,19 @@ $TRANSITION_ALL: all .3s ease;
   colorWhiteLight: $COLOR_WHITE_LIGHT;
   colorWhite90Light: $COLOR_WHITE_90_LIGHT;
   colorBlueLight: $COLOR_BLUE_LIGHT;
+  colorBlue10Light: $COLOR_BLUE_10_LIGHT;
   colorBlue80Light: $COLOR_BLUE_80_LIGHT;
   colorBrawnLight: $COLOR_BRAWN_LIGHT;
   colorBrawn80Light: $COLOR_BRAWN_80_LIGHT;
   colorBrawn50Light: $COLOR_BRAWN_50_LIGHT;
+  boxShadowTagLight: 0 2px 5px 0 $COLOR_BLACK_25_LIGHT;
   
   colorDarkblueDark: $COLOR_DARKBLUE_DARK;
+  colorBlue20Dark: $COLOR_BLUE_20_DARK;
   colorBlueDark: $COLOR_BLUE_DARK;
   colorWhiteDark: $COLOR_WHITE_DARK;
   colorWhite90Dark: $COLOR_WHITE_90_DARK;
   colorWhite70Dark: $COLOR_WHITE_70_DARK;
   colorWhite60Dark: $COLOR_WHITE_60_DARK;
+  boxShadowTagDark: 0 2px 5px 0 $COLOR_BLACK_DARK;
 }

@@ -1,0 +1,27 @@
+.skills {
+  .scopeSkillsWrapper {
+    margin-top: max(62px, .08472em);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    gap: 60px max(.15277em, 70px);
+    place-items: flex-start;
+  }
+}
+
+@media (max-width: 1250px) {
+  .skills {
+    .scopeSkillsWrapper {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .skills {
+    .scopeSkillsWrapper {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+}
+

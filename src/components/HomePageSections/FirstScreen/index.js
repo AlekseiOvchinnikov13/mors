@@ -2,9 +2,9 @@
 import SocialNetworks from '@/components/SocialNetworks';
 import styles from './FirstScreen.module.scss';
 import Image from 'next/image';
-import MyPhoto from '../../../public/assets/images/myPhoto.jpg';
+import MyPhoto from '../../../../public/assets/images/myPhoto.jpg';
 import {useSelector} from 'react-redux';
-import {colorBrawn80Light, colorWhite70Dark} from '../../app/styles/variables.module.scss';
+import {colorBrawn80Light, colorWhite70Dark} from '../../../app/styles/variables.module.scss';
 import useDetectMobile from '@/hooks/useDetectMobile';
 
 const FirstScreen = () => {
