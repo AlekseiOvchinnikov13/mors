@@ -1,0 +1,25 @@
+@import '../../app/styles/variables.module';
+
+.about {
+  padding-top: max(.12847em, 100px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    font-size: max($DESKTOP_FZ_TITLE_SECONDARY, 38px);
+    color: $COLOR_BLUE_LIGHT;
+    font-weight: $FONT_WEIGHT_BOLD;
+    line-height: normal;
+  }
+
+  .text {
+    font-size: max($DESKTOP_FZ_TEXT_PRIMARY, 16px);
+    font-weight: $FONT_WEIGHT_REGULAR;
+    line-height: 143%;
+    text-align: start;
+    margin-top: max(.05555em, 30px);
+    transition: $TRANSITION_COLOR;
+  }
+}
