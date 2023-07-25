@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import {LightThemeName} from '@/data/theme';
 import {colorWhiteLight, colorDarkblueDark} from '../../app/styles/variables.module.scss';
 import {useSelector} from 'react-redux';
-import styles from './contentWrapper.module.scss';
+import styles from './ContentWrapper.module.scss';
 
 const ContentWrapper = ({children}) => {
   const {theme} = useSelector(state => state.themeStore);

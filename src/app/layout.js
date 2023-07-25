@@ -4,7 +4,7 @@ import {store} from '@/store/store';
 import './styles/globals.scss';
 import {Montserrat} from 'next/font/google';
 import Header from '@/components/Header';
-import ContentWrapper from '@/components/contentWrapper';
+import ContentWrapper from 'src/components/ContentWrapper';
 import Footer from '@/components/Footer';
 
 
