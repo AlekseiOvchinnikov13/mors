@@ -10,6 +10,7 @@ import {
   boxShadowTagDark
 } from '../../app/styles/variables.module.scss';
 import {useSelector} from 'react-redux';
+import {LightThemeName} from '@/data/theme';
 
 const TagSkill = ({size, text}) => {
   const {theme} = useSelector(state => state.themeStore);
@@ -17,9 +18,9 @@ const TagSkill = ({size, text}) => {
     <div
       className={`${styles.tag} ${size === 'l' ? styles.tagL : styles.tagM}`}
       style={{
-        color: theme === 'light' ? colorBrawn80Light : colorWhite70Dark,
-        backgroundColor: theme === 'light' ? colorBlue10Light : colorBlue20Dark,
-        boxShadow: theme === 'light' ? boxShadowTagLight : boxShadowTagDark
+        color: theme === LightThemeName ? colorBrawn80Light : colorWhite70Dark,
+        backgroundColor: theme === LightThemeName ? colorBlue10Light : colorBlue20Dark,
+        boxShadow: theme === LightThemeName ? boxShadowTagLight : boxShadowTagDark
       }}
     >
       {text}

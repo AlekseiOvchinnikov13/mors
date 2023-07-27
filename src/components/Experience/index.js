@@ -2,6 +2,7 @@ import styles from '@/components/Experience/Experience.module.scss';
 import {EXPERIENCE_DATA} from '@/data/experience';
 import {colorBrawn80Light, colorWhite70Dark} from '../../app/styles/variables.module.scss';
 import {useSelector} from 'react-redux';
+import {LightThemeName} from '@/data/theme';
 
 const Experience = () => {
   const {theme} = useSelector(state => state.themeStore);
@@ -12,7 +13,7 @@ const Experience = () => {
           <p className={styles.quantity}>{number}</p>
           <p
             className={styles.field}
-            style={{color: theme === 'light' ? colorBrawn80Light : colorWhite70Dark}}
+            style={{color: theme === LightThemeName ? colorBrawn80Light : colorWhite70Dark}}
             dangerouslySetInnerHTML={{
               __html: text
             }}

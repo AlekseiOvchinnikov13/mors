@@ -3,6 +3,7 @@ import styles from './ScopeSkill.module.scss';
 import TagSkill from '@/components/TagSkill';
 import {colorBrawn80Light, colorWhite70Dark} from '../../app/styles/variables.module.scss';
 import {useSelector} from 'react-redux';
+import {LightThemeName} from '@/data/theme';
 
 const ScopeSkill = ({data: {title, skills}}) => {
   const {theme} = useSelector(state => state.themeStore);
@@ -11,7 +12,7 @@ const ScopeSkill = ({data: {title, skills}}) => {
     <div className={styles.scopeSkill}>
       <h6
         className={styles.title}
-        style={{color: theme === 'light' ? colorBrawn80Light : colorWhite70Dark}}
+        style={{color: theme === LightThemeName ? colorBrawn80Light : colorWhite70Dark}}
       >
         {title}
       </h6>

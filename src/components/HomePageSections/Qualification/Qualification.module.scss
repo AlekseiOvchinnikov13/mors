@@ -1,0 +1,15 @@
+.qualification {
+  .scopesWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 max(.0277em, 20px);
+  }
+}
+
+@media (max-width: 875px) {
+  .qualification {
+    .scopesWrapper {
+      grid-template-columns: 1fr;
+    }
+  }
+}

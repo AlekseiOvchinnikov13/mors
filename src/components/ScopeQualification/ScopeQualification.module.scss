@@ -1,0 +1,25 @@
+@import '../../app/styles/variables.module';
+
+.scopeQualification {
+  padding-top: max(40px, .0555em);
+  
+  .title {
+    font-size: max(22px, $DESKTOP_FZ_SUBTITLE_PRIMARY);
+    font-weight: $FONT_WEIGHT_MEDIUM;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0 max(10px, .00694em);
+    transition: $TRANSITION_COLOR;
+  }
+  
+  .qualificationCard {
+    padding-top: max(30px, .05em);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: max(30px, .03472em) 0
+  }
+}
+

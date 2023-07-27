@@ -5,6 +5,7 @@ import {colorBrawn80Light, colorWhite70Dark} from '../../../app/styles/variables
 import Button from '@/components/Button';
 import Experience from '@/components/Experience';
 import Title from '@/components/Title';
+import {LightThemeName} from '@/data/theme';
 
 const About = () => {
   const {theme} = useSelector(state => state.themeStore);
@@ -15,7 +16,7 @@ const About = () => {
       <Title title={'Обо мне'}/>
       <p
         className={styles.text}
-        style={{color: theme === 'light' ? colorBrawn80Light : colorWhite70Dark}}
+        style={{color: theme === LightThemeName ? colorBrawn80Light : colorWhite70Dark}}
       >
         Обладаю большим опытом в web и desktop разработке, опыт более 8 лет.
         Работаю в новых направлениях, технологиях и так далее.

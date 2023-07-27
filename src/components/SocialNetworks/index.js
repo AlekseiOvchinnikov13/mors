@@ -1,5 +1,5 @@
 import {SOCIAL_DATA} from '@/data/social';
-import SocialImage from '@/components/SocialImage';
+import SvgImage from 'src/components/SvgImage';
 import styles from './SocialNetworks.module.scss';
 import {colorWhiteLight} from '../../app/styles/variables.module.scss';
 
@@ -8,7 +8,7 @@ const SocialNetworks = ({className, isNoTheme}) =>
     {SOCIAL_DATA.map(({href, alt}) =>
       <li key={alt}>
         <a href={href} target={'_blank'}>
-          <SocialImage name={alt} color={isNoTheme ? colorWhiteLight : ''}/>
+          <SvgImage name={alt} color={isNoTheme ? colorWhiteLight : ''}/>
         </a>
       </li>
     )}
