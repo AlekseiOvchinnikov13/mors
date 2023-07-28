@@ -9,6 +9,7 @@ import {LightThemeName} from '@/data/theme';
 
 const About = () => {
   const {theme} = useSelector(state => state.themeStore);
+
   return (
     <div
       className={`${styles.about} section`}
@@ -25,7 +26,9 @@ const About = () => {
         Еще одна строчка для более полного текста.
       </p>
       <Experience/>
-      <Button text="Скачать CV"/>
+
+
+      <Button text="Скачать CV" onClick={() => {}}/>
     </div>
   );
 };
