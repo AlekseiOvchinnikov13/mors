@@ -9,7 +9,6 @@ const axiosConfig = {
 
 const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?parse_mode=html`;
 
-//const text = `<u><b>#ЗаказанЗвонок</b></u> \n<b>Имя</b>: ${nameValue} \n<b>Телефон</b>: ${phoneValue}`
 export const sendMessageToTelegram = async text =>
   await axios.post(
     TELEGRAM_API_URL,

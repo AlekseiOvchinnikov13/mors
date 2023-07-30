@@ -3,6 +3,7 @@ import About from 'src/components/HomePageSections/About';
 import Skills from '@/components/HomePageSections/Skills';
 import Qualification from '@/components/HomePageSections/Qualification';
 import Works from '@/components/HomePageSections/Works';
+import Contact from '@/components/HomePageSections/Contact';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Skills/>
       <Qualification/>
       <Works/>
+      <Contact/>
     </>
   );
 }

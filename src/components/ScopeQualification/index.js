@@ -20,7 +20,7 @@ const ScopeQualification = ({title,iconName,dataCard}) => {
       </h6>
       <div className={styles.qualificationCard}>
         {dataCard.map((data) =>
-          <QualificationCard key={data.cardTitle} data={data}/>
+          <QualificationCard key={data.cardTitle + data.text} data={data}/>
         )}
       </div>
     </div>
